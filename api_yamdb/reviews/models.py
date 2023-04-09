@@ -32,7 +32,7 @@ class Title(models.Model):
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
-        related_name='titles'
+        #related_name='titles'
     )
     genre = models.ManyToManyField(Genre, through='TitleGenre')
 
